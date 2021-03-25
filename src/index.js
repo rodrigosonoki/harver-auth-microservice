@@ -10,7 +10,7 @@ require("dotenv/config");
 const app = express();
 
 mongoose.connect(
-  "mongodb+srv://rodrigosonoki:1234@auth.yjsqx.mongodb.net/harver-stg?retryWrites=true&w=majority",
+  process.env.DB_CONNECT,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
