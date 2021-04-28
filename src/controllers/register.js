@@ -33,7 +33,7 @@ async function register(req, res) {
     return res.status(201).json({ message: "Usuário criado com sucesso!" });
   } catch (err) {
     return res.status(400).json({
-      message: "Error creating user.",
+      message: "Edrror creating user.",
     });
   }
 }
