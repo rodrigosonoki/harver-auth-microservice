@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+require("dotenv/config");
 
 export default function makeGenerateJwt(user) {
   const token = jwt.sign(
